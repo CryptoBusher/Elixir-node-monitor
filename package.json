@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "elixir-node-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:forever": "forever start -o out.log -e err.log ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryptoBusher/Elixir-node-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CryptoBusher/Elixir-node-monitor/issues"
+  },
+  "homepage": "https://github.com/CryptoBusher/Elixir-node-monitor#readme",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "node-fetch": "^3.3.2",
+    "winston": "^3.11.0",
+    "dotenv": "^16.4.1"
+  }
+}
