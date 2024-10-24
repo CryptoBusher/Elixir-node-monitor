@@ -2,11 +2,9 @@
 
 Простенький скрипт, который мониторит здоровье Elixir нод (/health).
 
-### Разработчик
 <b>Телеграм:</b> [CryptoBusher](https://t.me/CryptoBusher) ✍️<br>
 <b>Твиттер:</b> [CryptoBusher](https://twitter.com/CryptoBusher) ✍️<br>
 
-### Выносим вместе
 <b>Телеграм канал:</b> [CryptoKiddiesClub](https://t.me/CryptoKiddiesClub) 💎<br>
 <b>Телеграм чат:</b> [CryptoKiddiesChat](https://t.me/CryptoKiddiesChat) 💎<br>
 
