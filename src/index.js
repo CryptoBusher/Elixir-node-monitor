@@ -92,10 +92,10 @@ const handleResults = async (results) => {
     
         if (tgBot) {
             let tgMessage = `⚙️ <b>Elixir nodes status report</b>\n
-    <b>Successfull checks:</b> ${successes.length}
-    <b>Failed checks:</b>  ${fails.length}
-    <b>Status OK:</b> ${statusOk.length}
-    <b>Status not OK:</b> ${statusNotOk.length}
+<b>Successfull checks:</b> ${successes.length}
+<b>Failed checks:</b>  ${fails.length}
+<b>Status OK:</b> ${statusOk.length}
+<b>Status not OK:</b> ${statusNotOk.length}
     `
             if (failNames.length > 0) {
                 tgMessage += `<b>Fail names: </b> ${failNames.join(',')}\n`
