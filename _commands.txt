@@ -1,0 +1,3 @@
+1|reboot|docker kill elixir ; docker rm elixir ; sleep 10 ; docker run -d --env-file /root/validator.env --name elixir --restart unless-stopped -p 17690:17690 elixirprotocol/validator:v3
+2|reboot|docker kill elixir ; docker rm elixir ; sleep 10 ; docker run -d --env-file /root/validator.env --name elixir --restart unless-stopped -p 17690:17690 elixirprotocol/validator:v3
+3|reboot|docker kill elixir ; docker rm elixir ; sleep 10 ; docker run -d --env-file /root/validator.env --name elixir --restart unless-stopped -p 17690:17690 elixirprotocol/validator:v3

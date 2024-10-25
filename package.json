@@ -19,9 +19,10 @@
   },
   "homepage": "https://github.com/CryptoBusher/Elixir-node-monitor#readme",
   "dependencies": {
+    "dotenv": "^16.4.1",
     "forever": "^4.0.3",
     "node-fetch": "^3.3.2",
-    "winston": "^3.11.0",
-    "dotenv": "^16.4.1"
+    "ssh2": "^1.16.0",
+    "winston": "^3.11.0"
   }
 }

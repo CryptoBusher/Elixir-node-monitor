@@ -1,4 +1,6 @@
 import fetch from "node-fetch";
+
+import { sleep } from './helpers.js'
 import { logger } from './logger.js';
 
 
@@ -48,5 +50,7 @@ export class TelegramBot {
 			logger.debug(`Failed to post TG message, reason: ${JSON.stringify(await response.json())}`);
 			// throw new TelegramException(`Failed to post TG message, reason: ${JSON.stringify(await response.json())})`);
 		}
+
+		await sleep(1);
 	}
 }

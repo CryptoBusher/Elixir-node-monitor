@@ -134,3 +134,4 @@ servers.txt
 .env
 *.log
 *log.json
+commands.txt
