@@ -79,7 +79,12 @@ const handleResults = async (results) => {
         const statusNotOkNames = statusNotOk.map(item => item.name);
         badNodes.push(...statusNotOkNames);
     
-        const appVersions = extractUniqueAppVersions(statusOk);
+        const [appVersions, versionsReport] = extractUniqueAppVersions(statusOk);
+
+        if (appVersions.length > 1) {
+            logger.info(versionsReport);
+        }
+
         const appVersionsString = appVersions.join('|');
     
         logger.info(`Successes: ${successes.length}, fails: ${fails.length}, status ok: ${statusOk.length}, status not ok: ${statusNotOk.length}, app versions: ${appVersionsString}`);
@@ -93,10 +98,11 @@ const handleResults = async (results) => {
         if (tgBot) {
             let tgMessage = `⚙️ <b>Elixir nodes status report</b>\n
 <b>Successfull checks:</b> ${successes.length}
+<b>Versions:</b> ${appVersionsString}
 <b>Failed checks:</b>  ${fails.length}
 <b>Status OK:</b> ${statusOk.length}
 <b>Status not OK:</b> ${statusNotOk.length}
-    `
+`
             if (failNames.length > 0) {
                 tgMessage += `<b>Fail names: </b> ${failNames.join(',')}\n`
             }

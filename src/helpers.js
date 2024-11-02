@@ -8,15 +8,16 @@ export const txtToArray = (filePath) => {
 
 export const extractUniqueAppVersions = (data) => {
     const versions = [];
+    let versionsReport = 'VERSIONS REPORT:\n';
     for (const item of data) {
         if (item?.data?.app_version) {
+            versionsReport += `${item.name} - ${item.data.app_version}\n`;
             versions.push(item.data.app_version);
         }
     }
 
     const uniqueVersions = [...new Set(versions)];
-
-    return uniqueVersions;
+    return [uniqueVersions, versionsReport];
 }
 
 
